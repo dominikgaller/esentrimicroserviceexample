@@ -6,13 +6,13 @@
   "repository": "https://github.com/angular/angular-seed",
   "license": "tbd",
   "dependencies": {
-    "angular": "~1.4.0",
+    "angular": "1.4.8",
     "angular-bootstrap": "x.x.x",
     "angular-route": "~1.4.0",
-    "angular-loader": "~1.4.0",
-    "angular-mocks": "~1.4.0",
+    "angular-loader": "1.4.8",
+    "angular-mocks": "1.4.8",
     "html5-boilerplate": "~5.2.0",
-    "vertx3-eventbus-client": "x.x.x",
-    "angular-vertxbus": "x.x.x"
+    "vertx3-eventbus-client": "3.0.0",
+    "angular-vertxbus": "3.2.0"
   }
 }
