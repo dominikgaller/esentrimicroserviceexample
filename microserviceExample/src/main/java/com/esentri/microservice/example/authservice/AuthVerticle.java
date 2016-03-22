@@ -1,21 +1,14 @@
 package com.esentri.microservice.example.authservice;
 
 
-import java.util.List;
-
-import com.esentri.microservice.example.authservice.entities.User;
-
 import io.vertx.core.AbstractVerticle;
-import io.vertx.core.AsyncResult;
 import io.vertx.core.Future;
-import io.vertx.core.Handler;
 import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.eventbus.Message;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.logging.Logger;
 import io.vertx.ext.jdbc.JDBCClient;
-import io.vertx.ext.sql.ResultSet;
 import io.vertx.ext.sql.SQLConnection;
 
 /**
@@ -33,9 +26,6 @@ public class AuthVerticle extends AbstractVerticle {
 	
 	/** Address for login requests. */
 	private static final String loginreq = "esentri.login.request";
-	
-	/** Address for answering login requests. */
-	private static final String loginreply = "esentri.login.reply";
 	
 	/** Address for logout requests. */
 	private static final String logout = "esentri.logout";

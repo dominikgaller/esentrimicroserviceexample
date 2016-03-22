@@ -183,7 +183,6 @@ public class PhonebookVerticle extends AbstractVerticle {
 	 * @return the sessionId if found.
 	 */
 	private String extractSessionId(JsonObject json) {
-		System.out.println(json.toString());
 		if(json.containsKey("sessionId")) {
 			return json.getString("sessionId");
 		} else {

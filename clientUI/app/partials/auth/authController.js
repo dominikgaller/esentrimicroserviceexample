@@ -8,7 +8,7 @@ authController.controller('LoginCtrl', [
 
 			$scope.$on("sessionIDassigned", function(event) {
 				vertxEventBusService.on("esentri.login.reply:" + $rootScope.sessionId, function(message) {
-					console.log("Received login reply. Payload is: + " message);
+					console.log("Received login reply. Payload is: " + message);
 					var msg = angular.fromJson(message);
 					$rootScope.loggedIn = msg.loggedIn;
 					if(msg.loggedIn) {
