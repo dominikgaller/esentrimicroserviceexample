@@ -1,0 +1,16 @@
+!.gitkeep
+.DS_Store
+.idea
+.project
+.metadata
+
+/clientUI/node_modules/
+/clientUI/.jshintrc
+/clientUI/.travis.yml
+/clientUI/README.md
+/clientUI/app/bower_components
+
+/microserviceExample/bin/
+/microserviceExample/target/
+/microserviceExample/.settings/
+
