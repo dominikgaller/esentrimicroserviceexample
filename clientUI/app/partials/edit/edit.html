@@ -1,0 +1,19 @@
+<form class="addform form-inline" role="form">
+	<div class="form-group">
+		<label>name</label>
+		<input type="text" class="form-control" ng-model="toBeAdded.name" placeholder="name" />
+	</div>
+	<div class="form-group">
+		<label>number</label>
+		<input type="text" class="form-control" ng-model="toBeAdded.number" placeholder="number" />
+	</div>
+	<button class="btn btn-default btn-sm" ng-click="addEntry(toBeAdded)">add</button>
+</form>
+
+<div class="entries">
+	<div class="entry" ng-repeat="entry in entries | orderBy: 'name'">
+		{{entry.name}}
+		{{entry.number}}
+		<button class="btn btn-danger btn-xs right" ng-click="deleteEntry(entry)">delete</button>
+	</div>
+<div class="entries">

@@ -1,0 +1,123 @@
+/*
+	- index.html styles, overall styling
+*/
+
+body {
+	background-color: #2b2b2b;
+}
+
+.content {
+	width: 80%;
+	margin: auto;
+}
+
+header {
+	margin-top: 0;
+	background-color: #000;
+	color: #fff;
+	height: 190px;
+	border-bottom:2px solid lightgrey;
+}
+
+h1 {
+	color: #fff;
+	font-size: 2em;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+#logo {
+	padding: 10px 20px;
+}
+
+.white {
+	color: #fff;
+}
+
+.right {
+	float: right;
+}
+
+.loginform {
+	margin-top: -30px;
+	min-width: 400px;
+}
+
+nav {
+	position: absolute;
+	top: 168px;
+	float: left;
+}
+nav li {
+	margin-top: -20px;
+	float: left;
+	padding-right: 21px;
+	list-style: none;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+	float: right;
+	opacity:0.8; 
+	font-size: 16px; 
+	text-decoration: none; 
+}
+
+nav li a.active { 
+	color: #fff; 
+	opacity:1; 
+	border-bottom: 2px solid #fff; 
+}
+
+nav li a:hover { 
+	color: #fff; 
+	opacity:1;
+}
+
+#login {
+	color: #000;
+	width: 50%;
+}
+
+#logout {
+	display: none;
+	position: absolute;
+	top: 90px;
+	right: 50px;
+}
+
+#logoutbtn {
+	margin-bottom: 30px;
+}
+
+.err {
+	position: absolute;
+    left: 40px;
+    color: #DC143C;
+}
+
+/*
+	- phonebook style, phonebook.html Styles -
+*/
+ 
+.entry {
+	font-size: 1.1em;
+	padding: 10px 15px 10px 5px;
+	background-color: #808080;
+}
+
+.entry:nth-child(even) {
+	background-color: #7FFF00;
+}
+
+/*
+	- edit style, edit.html
+*/
+
+.addform {
+	padding: 10px 20px 10px 20px;
+	background-color: #7FFF00;
+	border: 1px solid #808080;
+	margin: 10px 0 20px 0;
+}
