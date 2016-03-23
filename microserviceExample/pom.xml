@@ -91,10 +91,10 @@
 									<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer"> 
 										<resource>META-INF/services/io.vertx.core.spi.VerticleFactory</resource> 
 									</transformer> 
-									<transformer implementation="org.apache.maven.plugins.shade.resource.IncludeResourceTransformer">
+									<!-- transformer implementation="org.apache.maven.plugins.shade.resource.IncludeResourceTransformer">
                     					<resource>resources/entries.json</resource>
                     					<file>src/main/resources/entries.json</file>
-                					</transformer>
+                					</transformer -->
 								</transformers> 
 								<artifactSet></artifactSet> 
 								<outputFile>${project.build.directory}/${project.name}-${project.version}-fat.jar</outputFile> 
